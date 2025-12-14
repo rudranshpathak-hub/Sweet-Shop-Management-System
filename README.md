@@ -56,6 +56,23 @@ The project demonstrates backend API development, database persistence, frontend
 * Persistent inventory stored in SQLite
 * Data remains intact after server restarts
 
+## How the System Works
+
+The application follows a client–server architecture.
+
+- The frontend is built using React and runs as a single-page application.
+- The backend is built using Node.js and Express and exposes RESTful APIs.
+- The frontend communicates with the backend via HTTP requests using Axios.
+- User authentication is handled using JWT tokens.
+- All data is stored persistently in a SQLite database file.
+
+### Flow
+1. A user registers or logs in through the frontend.
+2. Credentials are sent to the backend authentication APIs.
+3. Upon successful login, a JWT token is generated.
+4. The frontend uses backend APIs to fetch and update sweet inventory.
+5. All inventory and user data is stored in SQLite and persists across restarts.
+
 ---
 
 ## API Endpoints
@@ -151,6 +168,8 @@ Basic testing was performed by interacting with the frontend UI, validating:
 (Test automation can be extended using Jest and Supertest.)
 
 ---
+
+
 
 ## My AI Usage
 
